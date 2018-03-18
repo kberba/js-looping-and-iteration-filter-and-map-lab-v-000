@@ -29,7 +29,7 @@ function exactMatch(driver, attributeObj) {
     let driverList = false;
 
     for(const key in attributeObj) {
-      driverList = driver[key] === attributeObj[key];
+      driverList = element[key] === attributeObj[key];
     }
 
     return driverList;

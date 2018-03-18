@@ -24,5 +24,14 @@ function driverNamesWithRevenueOver(driver, revenue) {
 // all drivers whose name attribute equals Bob.
 
 function exactMatch(driver, attributeObj) {
-  //return driver.map(element => )
+  return driver.filter(element => {
+
+    let driverList = false;
+
+    for(const key in attributeObj) {
+      driverList = driver[key] === attributeObj[key];
+    }
+
+    return driverList;
+  })
 }

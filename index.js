@@ -42,5 +42,5 @@ function exactMatch(driver, attributeObj) {
 // the matching driver object.
 
 function exactMatchToList(driver, attributeObj) {
-
+  return exactMatch(driver, attributeObj).map(element => element.name);
 }
